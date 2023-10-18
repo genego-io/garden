@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  database:
+    restart: always
+    image: postgres
+    env_file:
+      - .env
+    volumes:
+      - ./conf/data/persistent/postgresql_stable/:/var/lib/postgresql/data/
+    ports:
+      - "5432:5432"
+    networks:
+      - konfuzio-net

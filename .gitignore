@@ -1,0 +1,58 @@
+# Django #
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3
+media/
+
+# Wagtail #
+/media/
+!media/.gitkeep
+ wagtail_images/
+
+# IntelliJ IDEA #
+.idea/
+*.iml
+
+# macOS #
+.DS_Store
+
+# Python #
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+*.venv
+*.virtualenv
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+persist
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Others #
+*.db
+*.sql
+*.sqlite3
+*.token
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.mp4
+*.mov
+*.ai
+*.psd
+*.pem
+*.asc
+*.gpg
+
+
+/.env
