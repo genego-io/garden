@@ -1,0 +1,12 @@
+#theme-switch {
+  width: 1em;
+  height: 1em;
+  border: 1px solid black;
+  margin-right: -1em;
+  display: flex;
+  .toggle {
+    flex: 1;
+    background: red;
+    width: 100%;
+  }
+}

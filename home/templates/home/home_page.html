@@ -5,9 +5,19 @@
 
 {% block extra_css %}
 
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home_page.css' %}">
 
 {% endblock extra_css %}
 
 {% block content %}
-
+    <div class="introduction">
+        <div class="profile-image">
+            <img src="{% static 'me.png' %}" alt="">
+        </div>
+        <div class="profile-text">
+         {% include 'components/terminal.html' %}
+        </div>
+        <div class="tape">
+        </div>
+    </div>
 {% endblock content %}

@@ -17,3 +17,29 @@ applications like Gitbook, Gatsby Cloud, LinkedIn and Wordpress. With this DG I 
 1. `flyctl auth login`
 2. `fly launch`
 3. `fly deploy`
+
+## Features
+
+### Blog
+
+Simple blog where I share my thoughts and ideas, currently hosted at https://blog.genego.io (Gatsby cloud)
+
+- Comments
+- Ongoing series
+- Upcoming blog posts (pre-draft)
+- Newsletter integration
+
+### Article section
+
+For larger postings, case-studies, etc. Things which are too big to large to be a blogpost.
+
+### About
+
+A about me page, where I outline who I am, what I do, and what I have to offer the world of software
+
+Currently hosted at https://edwin.genego.io (Gitbook free)
+
+- Portfolio section (replaces the need to visit various sites)
+- Services section (replaces LinkedIn)
+- Work section (replaces LinkedIn)
+

@@ -1,0 +1,15 @@
+body {
+  font-family: $system-font-stack;
+  font-weight: 500;
+  background-color: #fafaff;
+  text-rendering: optimizeLegibility;
+
+  .canvas {
+    width: $canvas-width;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+
+    // Dot grid background
+  }
+}

@@ -2,3 +2,4 @@ Django==4.2.6
 wagtail==5.1.2
 black==23.10.0
 isort==5.12.0
+django-htmx==1.17.0
