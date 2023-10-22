@@ -33,8 +33,10 @@
     }
 
     ul {
+        vertical-align: center;
+
       display: flex;
-      font-size: 0.95em;
+      font-size: 0.93em;
 
 
       li {
@@ -55,11 +57,12 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: white;
+    background-color: $color-background;
     border: 1px solid #ccc;
     z-index: 1000;
     width: 14.9em;
     margin-top: 0.9em;
+
 
     ul {
       padding-top: 1em;

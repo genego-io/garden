@@ -1,8 +1,9 @@
 body {
   font-family: $system-font-stack;
   font-weight: 500;
-  background-color: #fafaff;
+  background-color: $color-background;
   text-rendering: optimizeLegibility;
+  color: $color-text;
 
   .canvas {
     width: $canvas-width;
