@@ -1,6 +1,5 @@
 .introduction {
   margin-top: 0.5em;
-  width: 100%;
   padding: 1em;
   height: 19em;
   background-color: #22272E;
@@ -42,6 +41,20 @@
   padding: 10px;
   height: 10em;
   width: 1em;
+}
+
+#icons {
+  position: absolute;
+  display: flex;
+}
+#icons #icon {
+  right: -1150%;
+  position: relative;
+  margin-top: -3.5em;
+  flex: 1;
+  width: 1.5em;
+  height: 1.5em;
+  opacity: 80%;
 }
 
 /*# sourceMappingURL=home_page.css.map */

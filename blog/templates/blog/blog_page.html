@@ -6,11 +6,21 @@
 {% block body_class %}template-blogpage{% endblock %}
 
 {% block content %}
-        <link rel="stylesheet" type="text/css" href="{% static 'css/blog_page.css' %}">
-    <div class="blog-page">
-        <h1>{{ page.title }}</h1>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/blog_page.css' %}">
+    <div class="blog-header">
+        <div class="tagline"> Reflections on Software, AI and Tech.</div>
+
+        <div class="tags-list">
+            <div class="tags">
+                <a class="tag" href="">test</a>
+            </div>
+        </div>
+        <h1 class="title">{{ page.title }}</h1>
         <p class="meta">{{ page.date }}</p>
 
+        <hr>
+    </div>
+    <div class="blog-page">
         <div class="intro">{{ page.intro }}</div>
 
         {{ page.body|richtext }}

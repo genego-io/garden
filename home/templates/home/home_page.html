@@ -13,11 +13,20 @@
     <div class="introduction">
         <div class="profile-image">
             <img src="{% static 'me.png' %}" alt="">
+            <div id="icons">
+                <img id="icon" src="{% static 'django.svg' %}" alt="">
+                <img id="icon" src="{% static 'python.svg' %}" alt="">
+                <img id="icon" src="{% static 'javascript.svg' %}" alt="">
+
+            </div>
         </div>
         <div class="profile-text">
-         {% include 'components/terminal.html' %}
+            {% include 'components/terminal.html' %}
         </div>
         <div class="tape">
         </div>
     </div>
+    {% include 'components/information.html' %}
+    {% include 'components/services.html' %}
+
 {% endblock content %}

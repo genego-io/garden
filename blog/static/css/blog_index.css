@@ -7,10 +7,14 @@
   color: inherit;
 }
 
+.tagline {
+  font-size: 105%;
+  margin-bottom: 0.25em;
+}
+
 .linking {
   display: flex;
   justify-content: space-between;
-  font-size: 13px;
   font-family: Monospace, Monaco, "Andale Mono", serif;
 }
 .linking .tags-list {
