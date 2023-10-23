@@ -1,9 +1,10 @@
+{% load static %}
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 <div style="
-    width: 37em;
-    margin-top: 0.5em;
+    width: 96%;
+    margin-top: 1em;
     background-color: #333;
-    border-radius: 5px;
+    border-radius: 0.1em;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 ">
@@ -22,9 +23,9 @@
 
     <!-- Terminal Content -->
     <div style="
-        height: 16em;
+        height: 15em;
         background-color: #1e1e1e;
-        padding: 15px;
+        padding: 1em;
         font-size: 0.9em;
         font-family: 'Courier New', Courier, monospace;
         color: #e4e4e4;
@@ -46,6 +47,12 @@
         <div style="margin-top: 10px; color: #f39c12;">
             <span>edwin@genego:</span> <span style="animation: blink 1s infinite;">|</span> <!-- Blinking cursor -->
         </div>
+    </div>
+        <div id="icons">
+
+        <img id="icon" src="{% static 'django.svg' %}" alt="">
+        <img id="icon" src="{% static 'python.svg' %}" alt="">
+        <img id="icon" src="{% static 'javascript.svg' %}" alt="">
     </div>
 </div>
 

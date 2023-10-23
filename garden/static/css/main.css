@@ -55,7 +55,7 @@ body {
   color: #EAF2F7;
 }
 body .canvas {
-  width: 50vw;
+  width: 48vw;
   height: 100vh;
   margin-left: auto;
   margin-right: auto;
@@ -74,7 +74,7 @@ body .canvas {
 }
 .navbar .content {
   padding-left: 1.5em;
-  width: 50vw;
+  width: 48vw;
   margin: auto;
   display: flex;
   justify-content: space-between;

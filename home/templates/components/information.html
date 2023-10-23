@@ -1,20 +1,33 @@
 {% load static %}
+{% load wagtailcore_tags %}
+{% load wagtailcore_tags wagtailimages_tags %}
 {% block extra_css %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/information.css' %}">
 {% endblock extra_css %}
 
 <div class="information">
     <div class="projects-box">
-        <h2>Projects</h2>
+        <h2>Work</h2>
         <div id="box-content">
 
         </div>
 
     </div>
     <div class="blog-box">
-        <h2>Blog</h2>
+        <h2>Blog (<a href="">more</a>)</h2>
         <div id="box-content">
-
+            <div class="blog-items">
+                {% for post in pages %}
+                    <div class="blog-item">
+                        <div class="date">{{ post.date }}</div>
+                        <div class="title">{{ post.title }}</div>
+                        <div class="read-button">
+                            <a href="{% pageurl post %}">Read →</a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
     </div>
+</div>
 </div>

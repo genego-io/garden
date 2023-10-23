@@ -3,7 +3,8 @@
 
 <div class="navbar">
     <div class="content">
-        <a id="logo-link" href="/"><span id="logo"><span id="left">[</span> Edwin Genego <span id="right">]</span> <span id="subtitle">Software & More</span></span></a>
+        <a id="logo-link" href="/"><span id="logo"><span id="left">[</span> Edwin Genego <span id="right">]</span> <span
+                id="subtitle">Software & More</span></span></a>
         <ul>
             <li><a href="/blog">Blog</a></li>
             <li id="about-dropdown">
@@ -20,10 +21,9 @@
                 </span>
                 <div id="dropdown-menu" style="display:none;">
                     <ul>
-                        <li>Me</li>
-                        <li>Work</li>
-                        <li>Notes</li>
-                        <li>Expertise</li>
+                        {% for page in about_pages %}
+                        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+                        {% endfor %}
                     </ul>
                 </div>
             </li>
