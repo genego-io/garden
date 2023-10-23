@@ -1,0 +1,64 @@
+.blog-index {
+  margin-left: 1em;
+  margin-top: 1em;
+}
+.blog-index a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.linking {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-family: Monospace, Monaco, "Andale Mono", serif;
+}
+.linking .tags-list {
+  color: #428d46;
+  margin-bottom: 1em;
+}
+.linking .tags-list a {
+  text-decoration: none;
+  color: inherit;
+}
+.linking .tags-list .tags {
+  display: flex;
+  margin-top: 0.5em;
+  height: 1.2em;
+}
+.linking .tags-list .tags .tag {
+  padding: 1px 3px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-right: 0.2em;
+}
+
+.posts {
+  margin-top: 1em;
+}
+.posts .blog-post {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 1em;
+  background: white;
+  padding: 1em;
+  color: black;
+  border-radius: 0.2em;
+  width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Drop shadow added here */
+}
+.posts .blog-post .title {
+  margin-top: 0.5em;
+  font-size: 1.2em;
+  color: rgba(27, 27, 27, 0.75);
+}
+.posts .blog-post .date {
+  margin-top: 0.5em;
+  font-size: 0.8em;
+  color: #428d46;
+}
+.posts .blog-post h2 {
+  padding-bottom: 0.5em;
+}
+
+/*# sourceMappingURL=blog_index.css.map */
