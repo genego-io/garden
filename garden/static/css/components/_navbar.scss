@@ -5,6 +5,10 @@
   border-bottom: 1px solid #cccccc;
   display: flex;
 
+  a {
+    text-decoration: none !important;
+    color: inherit;
+  }
 
   .content {
     padding-left: 1.5em;
@@ -13,9 +17,11 @@
     display: flex;
     justify-content: space-between;
 
+
     #logo {
       pointer-events: none;
       user-select: none;
+
 
       #subtitle {
         font-size: 75%;
@@ -33,7 +39,7 @@
     }
 
     ul {
-        vertical-align: center;
+      vertical-align: center;
 
       display: flex;
       font-size: 0.93em;

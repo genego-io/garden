@@ -1,17 +1,35 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% load wagtailcore_tags %}
-
+{% load wagtailcore_tags wagtailimages_tags %}
 {% block body_class %}template-blogindexpage{% endblock %}
-
 {% block content %}
-    <h1>{{ page.title }}</h1>
-    <div class="intro">{{ page.intro|richtext }}</div>
-    {% for post in page.get_children %}
-        {% with post=post.specific %}
-            <h2><a href="{% pageurl post %}">{{ post.title }}</a></h2>
-            <p>{{ post.intro }}</p>
-            {{ post.body|richtext }}
-        {% endwith %}
-    {% endfor %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/blog_index.css' %}">
+
+    <div class="blog-index">
+        <div class="linking">
+            <div class="tags-list">
+                <div class="tags">
+                    {% for tag in all_tags %}
+                        <a href="{% pageurl page %}?tag={{ tag.slug }}"><span class="tag">{{ tag.name }}</span></a>
+                    {% endfor %}
+                </div>
+            </div>
+        <div class="series">
+            <a href="">Series</a>
+        </div>
+        </div>
+        <hr>
+        <div class="posts">
+            {% for post in page.get_children %}
+                <div class="blog-post">
+                    {% with post=post.specific %}
+                        <h2 class="title"><a href="{% pageurl post %}">{{ post.title }}</a></h2>
+                        <p class="intro">{{ post.intro }}</p>
+                        <p class="date">{{ post.date }}</p>
+                    {% endwith %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
 {% endblock %}

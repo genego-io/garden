@@ -30,7 +30,7 @@
     {% endblock %}
 </head>
 
-<body class="{% block body_class %}{% endblock %}">
+<body class="{% block body_class %}{% endblock %}" hx-swap-oob="true">
 {% include 'components/navbar.html' %}
 
 <div class="canvas">
